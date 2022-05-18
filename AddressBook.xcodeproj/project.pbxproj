@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EFE2A11279E19E60004A5F0 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE2A10279E19E60004A5F0 /* PersonController.swift */; };
+		9D21317B283445A400D155A6 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21317A283445A400D155A6 /* ContactTableViewCell.swift */; };
 		F7040FF22716520B00B913AC /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7040FF12716520B00B913AC /* GroupsTableViewController.swift */; };
 		F7040FF72716528200B913AC /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7040FF62716528200B913AC /* PersonDetailViewController.swift */; };
 		F7FB3DE527163FDB0091D1B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FB3DE427163FDB0091D1B1 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3EFE2A10279E19E60004A5F0 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		9D21317A283445A400D155A6 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		F7040FF12716520B00B913AC /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		F7040FF62716528200B913AC /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		F7FB3DE127163FDB0091D1B1 /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 				F7040FF12716520B00B913AC /* GroupsTableViewController.swift */,
 				F7FB3DFF27164A4E0091D1B1 /* PeopleTableViewController.swift */,
 				F7040FF62716528200B913AC /* PersonDetailViewController.swift */,
+				9D21317A283445A400D155A6 /* ContactTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				F7040FF72716528200B913AC /* PersonDetailViewController.swift in Sources */,
 				F7FB3DE527163FDB0091D1B1 /* AppDelegate.swift in Sources */,
 				F7FB3DE727163FDB0091D1B1 /* SceneDelegate.swift in Sources */,
+				9D21317B283445A400D155A6 /* ContactTableViewCell.swift in Sources */,
 				F7FB3E0027164A4E0091D1B1 /* PeopleTableViewController.swift in Sources */,
 				F7FB3DFB271643B10091D1B1 /* Person.swift in Sources */,
 				F7FB3DFE271649D20091D1B1 /* GroupController.swift in Sources */,

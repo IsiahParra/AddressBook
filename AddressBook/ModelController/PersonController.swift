@@ -8,6 +8,7 @@
 import Foundation
 
 class PersonContoller {
+    var isFavorite: Person?
     static func createPerson(name: String = "New Contact",
                       address: String = "",
                       group: Group) {
@@ -29,4 +30,12 @@ class PersonContoller {
         person.address = address
         GroupController.shared.saveContactsToDisk()
     }
-}
+    static func toggleIsFavorite(person: Person) {
+        person.isFavorite.toggle()
+    }
+    func saveToPersistenceStore () {
+        
+    }
+
+}// End OF class
+
