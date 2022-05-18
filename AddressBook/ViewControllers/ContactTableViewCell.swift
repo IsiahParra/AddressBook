@@ -7,11 +7,11 @@
 
 import UIKit
 protocol ContactTableViewCellDelegate: AnyObject{
-    
+    func toggleFavoriteButtonTapped (cell: ContactTableViewCell)
 }
 
 class ContactTableViewCell: UITableViewCell {
-//MARK: OUTLETS
+    //MARK: OUTLETS
     
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var contactLabel: UILabel!
@@ -27,22 +27,22 @@ class ContactTableViewCell: UITableViewCell {
     }
     func updateView() {
         guard let person = person else {return}
-        contactLabel.text = person.address
+        
+        contactLabel.text = person.name
         if person.isFavorite == true {
             favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
-        } else { favoriteButton.setImage(UIImage(systemName: "star"), for: .normal) } }
-            
+        } else { favoriteButton.setImage(UIImage(systemName: "star"), for: .normal) }
         
-//        let favoriteImageName = person.isFavorite == true ? "star.fill" : "star"
-//        let favoriteImage = UIImage(systemName: favoriteImageName)
-//        favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
-  
+    }
+    
+    
+    //        let favoriteImageName = person.isFavorite == true ? "star.fill" : "star"
+    //        let favoriteImage = UIImage(systemName: favoriteImageName)
+    //        favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+    
     
     @IBAction func toggleFavoriteButton(_ sender: Any) {
-        
+        delegate?.toggleFavoriteButtonTapped(cell: self)
     }
-    @IBAction func addButtonTapped(_ sender: Any) {
-    }
-    
     
 }// End of class

@@ -35,6 +35,7 @@ class GroupsTableViewController: UITableViewController {
             let group = groupController.groups[indexPath.row]
             groupController.delete(group: group)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            
         }
     }
     
@@ -45,6 +46,7 @@ class GroupsTableViewController: UITableViewController {
               let selectedRow = tableView.indexPathForSelectedRow?.row else { return }
         let group = groupController.groups[selectedRow]
         peopleTableViewController.group = group
+        
     }
     
     // MARK: - IBActions
